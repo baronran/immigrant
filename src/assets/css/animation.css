@@ -1,0 +1,241 @@
+@keyframes left {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.shade-item {
+  /*display: inline-block;*/
+  /*margin-right: 10px;*/
+}
+
+.shade-enter-active, .shade-leave-active {
+  /*transition: all 2s;*/
+    opacity: 1;
+}
+
+.shade-enter, .shade-leave-to {
+  opacity: 0;
+  /*transform: translateY(30px);*/
+}
+
+/* 方法二 */
+.mirrorRotateLevel { /* 水平镜像翻转 */
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    transform: scaleX(-1);
+    /*兼容IE*/
+    filter: FlipH;
+}
+
+.mirrorRotateVertical { /* 垂直镜像翻转 */
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    transform: scaleY(-1);
+    /*兼容IE*/
+    filter: FlipV;
+}
+
+
+/*渐隐渐显的动画*/
+.fade {
+    -webkit-animation: fade 2s infinite; /* Chrome, Safari, Opera */
+    animation: fade 2s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes fade {
+    0% {
+        opacity: .1;
+    }
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes fade {
+    0% {
+        opacity: .1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*放大缩小的动画*/
+.scale_animation {
+    -webkit-animation: scale_name 1.5s infinite; /* Chrome, Safari, Opera */
+    animation: scale_name 1.5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes scale_name {
+    0% {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1); /*兼容-webkit-引擎浏览器*/
+        -moz-transform: scale(1, 1); /*兼容-moz-引擎浏览器*/
+
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2); /*兼容-webkit-引擎浏览器*/
+        -moz-transform: scale(1.2, 1.2); /*兼容-moz-引擎浏览器*/
+    }
+
+    100% {
+        transform: scale(1.4, 1.4);
+        -webkit-transform: scale(1.4, 1.4); /*兼容-webkit-引擎浏览器*/
+        -moz-transform: scale(1.4, 1.4); /*兼容-moz-引擎浏览器*/
+    }
+}
+
+/* Standard syntax */
+@keyframes scale_name {
+    0% {
+        transform: scale(1, 1);
+        -webkit-transform: scale(1, 1); /*兼容-webkit-引擎浏览器*/
+        -moz-transform: scale(1, 1); /*兼容-moz-引擎浏览器*/
+
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+        -webkit-transform: scale(1.2, 1.2); /*兼容-webkit-引擎浏览器*/
+        -moz-transform: scale(1.2, 1.2); /*兼容-moz-引擎浏览器*/
+    }
+
+    100% {
+        transform: scale(1.4, 1.4);
+        -webkit-transform: scale(1.4, 1.4); /*兼容-webkit-引擎浏览器*/
+        -moz-transform: scale(1.4, 1.4); /*兼容-moz-引擎浏览器*/
+    }
+}
+
+
+/*上下浮动动画*/
+.downUp_animation {
+    -webkit-animation: downUp_animation_name 2.5s infinite; /* Chrome, Safari, Opera */
+    animation: downUp_animation_name 2.5s infinite;
+}
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes downUp_animation_name {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: -15px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+/* Standard syntax */
+@keyframes downUp_animation_name {
+    0% {
+        margin-top: 0px;
+    }
+    50% {
+        margin-top: -15px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+
+}
+
+/*旋转*/
+.rotate_animation {
+    animation: rotate_name 15s linear infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotate_name {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+/* Standard syntax */
+@keyframes rotate_name {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg)
+    }
+
+}
+
+/*反旋转*/
+.rotate_animation2 {
+    animation: rotate_name 4s linear infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rotate_name2 {
+    0% {
+        transform: rotate(360deg)
+    }
+    50% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+/*闪烁*/
+.twinkle_animation {
+    -webkit-animation: twinkle_name 3s infinite; /* Chrome, Safari, Opera */
+    animation: twinkle_name 3s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes twinkle_name {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Standard syntax */
+@keyframes twinkle_name {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+

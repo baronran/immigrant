@@ -1,0 +1,28 @@
+/**
+ * 电子屏字体1986
+ */
+@font-face {
+  font-family: 'PangMenZhengDao';
+  src: url('./庞门正道标题体3.0(1).TTF');
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'QTYPECOND-BOOK';
+  src: url('./QTYPECOND-BOOK.PFB(1).TTF');
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: 'ZiHun';
+  src: url('./字魂59号-创粗黑(1).TTF');
+  font-size: 16px;
+}
+@font-face {
+  font-family: 'DIN';
+  src: url('./DIN-Pro-Regular-2.otf');
+  font-size: 16px;
+}
+.PangMenZhengDao{
+  font-family: PangMenZhengDao;
+}
